@@ -1,0 +1,628 @@
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        margin-top: 10px;
+    }
+
+    .nav-items li {
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    color: #000; /* Cor preta */
+}
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #070707;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 36px;
+    color: #0c1716;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o subtítulo */
+h3 {
+    font-size: 18px;
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os parágrafos com palavras para trocar */
+p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Estilo para palavras em negrito */
+strong {
+    font-weight: bold;
+    color: #0077b6; /* Cor personalizada para palavras em negrito */
+}
+
+/* Estilo para o input de texto */
+input#palavra {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px solid #0077b6;
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #0077b6;
+    color: #030303;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o botão quando hover (ao passar o mouse sobre o botão) */
+button:hover {
+    background-color: #005b91; /* Cor personalizada para o hover do botão */
+}
+
+
+header {
+    background-color: #82b1af;
+    color: #090909;
+    padding: 10px 0;
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #050505;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.login-button button {
+    background-color: #f00;
+    color: #080808;
+    border: none;
+    padding: 5px 10px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos para a versão móvel */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* JOGO - da FORCA */
+/* JOGO - da FORCA */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do corpo do jogo */
+#jogo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* ou o valor desejado para limitar a largura */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Para espaçar a logo e a seleção de personagem */
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 150px; /* ou o valor desejado */
+    height: auto;
+}
+
+.character-selection select {
+    padding: 10px; /* Adicionado para melhorar a aparência do select */
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+/* Estilo do menu móvel */
+.mobile-menu-icon {
+    display: none;
+}
+
+/* Estilo da tabela do jogo */
+#tabela {
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-item {
+    margin: 0 15px;
+}
+
+/* Estilo do botão de acessibilidade */
+.enabled {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do formulário de tentativas */
+#tentativa {
+    display: flex;
+    justify-content: center;
+}
+
+#tentativa input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/* Estilo das letras */
+#letras p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#letras button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do personagem selecionado */
+.character-selection {
+    margin-top: 10px;
+}
+
+#selected-character-img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Estilo do menu móvel */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+/* Fim do Jogo da FORCA */
+
+
+
+
+
+/* Troca PALAVRA */
+/* Reset de estilos para normalizar o CSS em diferentes navegadores */
+body, h1, h2, p, ul, li, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 15px 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+/* Estilo do menu móvel */
+.mobile-menu-icon {
+    display: none;
+}
+
+/* Estilo do corpo do jogo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*Input*/
+.caixa{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    font-family: 'Poppins',sans-serif;
+}
+input{
+    padding: 20px;
+    width: 30%;
+}
+
+/*Fim do input*/
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilo das palavras */
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-item {
+    margin: 0 15px;
+}
+
+/* Estilo do botão de acessibilidade */
+.enabled {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do formulário de tentativas */
+#tentativa {
+    display: flex;
+    justify-content: center;
+}
+
+#tentativa input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/* Estilo das letras */
+#letras p {
+    display: flex;
+}
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px; /* Altura ajustada para telas menores */
+        padding-inline: 10px; /* Espaçamento interno ajustado para telas menores */
+    }
+}
+
+/* Estilos padrão para telas maiores */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 10px; /* Padding ajustado para telas menores */
+    }
+}
+
+
+/* Estilos padrão para telas maiores */
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px; /* Altura ajustada para telas menores */
+        padding-inline: 10px; /* Espaçamento interno ajustado para telas menores */
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+/* Estilos padrão para telas maiores */
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px;
+        padding-inline: 10px; 
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #000;
+    box-shadow: 0px 3px 10px #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    color: #000; 
+}
+.banner img {
+    width: 100%; 
+    height: 500px; 
+    max-width: 1000px; 
+    max-height: 1000%;
+}
+/* Estilos padrão para telas maiores */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .character-selection {
+        margin-top: 20px;
+    }
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #060606;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000000;
+    font-weight: 400;
+}
+/* BOTÃO DOS CARDS */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    height: 400px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.card p {
+    padding: 10px;
+    text-align: center;
+}
+.card button {
+    background-color: rgb(169, 151, 10);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+.card button:hover {
+    background-color: rgb(228, 229, 194);
+}
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+/* FIM */
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: rgb(228, 229, 194);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    footer {
+        padding: 5px;
+    }
+
+    .footer-content {
+        max-width: 90%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.animal {
+    margin: 10px;
+    text-align: center;
+}
+img {
+    max-width: 400px;
+    max-height: 150px;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+#checkButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#results {
+    margin: 20px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row {
+    display: flex;
+}
+.animal {
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+}
+img {
+    max-width: 200px;
+    max-height: 150px;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+#checkButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#results {
+    margin: 20px 0;
+}
+/*Começo dos cards*/
+.cards{
+    display: flex;
+}
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+.card img {
+    width:300px;
+    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card p {
+    text-align: center;
+    font-size: 16px;
+}
+/*Fim dos Cards*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+.header {
+    padding-inline: 16px;
+}
+ .nav {
+ max-width: 1280px;
+ height: 70px;
+ margin-inline: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+  
+  .logo {
+    font-size: 48px;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+  }
+  
+  .hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./bg.jpg");
+  }
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 750px) {
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+    /* Estilos ativos */
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+/* Estilos para o rodapé */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-item {
+    margin: 0 15px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-content p {
+    color: #040404; /* Define a cor do texto para branco */
+}
+
+.container {
+    text-align: center;
+}
+
+/* Estilos para as imagens dos animais */
+.animal-row {
+    display: flex;
+    justify-content: center;
+}
+
+.animal {
+    margin: 10px;
+    text-align: center;
+}
+
+.animal img {
+    width: 120px;
+    height: 108px;
+    object-fit: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para a entrada de texto */
+.animal input {
+    margin-top: 10px;
+}
+/* Estilos para o menu e explicação */
+ .mobile-menu {
+    display: block;
+}
+
+.explanation {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o logo */
+.logo img {
+    width: 100px; 
+}
+
+/* ANIMAÇÃO */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:3000px;}
+
+}
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  z-index: -5;
+}
+.center h1{
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+/* FIM */
+.regras img {
+    width: 100%; 
+    height: 500px; 
+    max-width: 390px; 
+    max-height: 1900%;
+     
+}
+
+/* PERSONAGENS */
+.character-selection {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#character {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#selected-character-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para o hover do seletor */
+#character:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Estilo para o foco do seletor */
+#character:focus {
+    outline: none;
+    border-color: rgb(205, 221, 167);
+    box-shadow: 0 0 10px rgb(205, 221, 167);
+}
+
+/* Estilo para o seletor aberto */
+#character:active,
+#character:checked {
+    background-color: rgb(205, 221, 167);
+    color: #fff;
+}
+
+/* Estilo para as opções do seletor */
+#character option {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Estilos padrão para telas maiores */
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px; 
+        padding-inline: 10px; 
+    }
+}
+
+
+
+/* Estilos padrão para telas maiores */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 10px; /* Padding ajustado para telas menores */
+    }
+}
+
+/* Estilos padrão para telas maiores */
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px; /* Altura ajustada para telas menores */
+        padding-inline: 10px; /* Espaçamento interno ajustado para telas menores */
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+/* jogo da velha */
+.corpo{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#jogo{
+    width: 603px;
+    height: 603px;    
+    border: solid 3px;
+    display: inline-block;    
+    background-color: white;
+}
+#resultado{
+    margin-left: 30px;
+    float: left;
+}
+#resposta{
+    font-size: 30;
+    font-style: italic;
+    color: #000000;
+}
+.linha{
+    height: 200px;
+    border-bottom: solid 1px;
+}
+.casa{
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+.xis{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.bola{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.velha{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+input[type = button], input[type = submit], input[type = reset] {
+    background-color: #f6da3d;
+    background-image: linear-gradient(to bottom, #edf63d, #cdd01e);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 40px;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid rgb(224, 243, 24) 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type = button]:hover {
+    background: #b2d01e;
+    background-image: linear-gradient(to bottom, #cad01e, #e4f63d);
+    text-decoration: none;
+    text-align: center;
+}
+#casa0, #casa1, #casa2, #casa3, #casa4, #casa5{
+    border-bottom: solid 1px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+.centralizar-jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante a centralização vertical */
+  }
+/* fim do jogo da velha */
+
+
+/* Estilos padrão para telas maiores */
+.header {
+    height: 70px;
+    padding-inline: 16px;
+}
+
+/* Estilos para telas menores (móveis) usando media queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 50px; /* Altura ajustada para telas menores */
+        padding-inline: 10px; /* Espaçamento interno ajustado para telas menores */
+    }
+}
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

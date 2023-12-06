@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="caminho/do/seu/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="center">
+    
+    </div>
+     <!-- Home -->
+  <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="img/image-removebg-preview (15).png" alt="Animal" 2 style="width: 150px; height: auto;">
+
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="regras.html" class="nav-link">Como Jogar?</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <!-- Personagens -->
+            <div class="character-selection">
+                <select id="character" onchange="changeCharacter()">
+                    <option value="personagem1" data-img="img/personagem1.png">Personagem 1</option>
+                    <option value="personagem2" data-img="img/personagem2.png">Personagem 2</option>
+                    <option value="personagem3" data-img="img/personagem3.png">Personagem 3</option>
+                    <option value="personagem4" data-img="img/personagem4.png">Personagem 4</option>
+                    <option value="personagem5" data-img="img/personagem5.png">Personagem 5</option>
+                </select>
+                <img id="selected-character-img" src="" style="width: 90px; height: 90px;">
+            </div>
+            <!-- FIM - Personagens -->
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="toggleMobileMenu()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</header>
+
+    <!-- FIM DA HOME -->
+    <!--Conteúdo-->
+    <main>
+        <br>
+        <br>
+        <div class="banner">
+            <img src="img/banner.png" alt="">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <h1>JOGOS</h1>
+        <br>
+        <div class="jogos">
+            <div class="card" style="display: inline-block;">
+                <a href="infantil.html">
+                    <img src="img/Ingles.PNG" alt="">
+                    <p>Educativo</p>
+                    <p>Desempenhe seu Inglês, para conquistar vitórias.</p>
+                    <p></p>
+                    <p></p>
+                    <br>
+                    <button class="button">Jogar</button>
+                </a>
+            </div>
+            <div class="card" style="display: inline-block;">
+                <a href="jogo_da_velha.html">
+                    <img src="img/jogo_velha.PNG" alt="">
+                    <p>Jogo da Velha</p>
+                    <p>Convide um amigo para jogar. Forme uma linha com três símbolos para ser o ganhador!</p>
+                    <p></p>
+                    <p></p>
+                    <br>
+                    <button class="button">Jogar</button>
+                </a>
+            </div>
+            <div class="card" style="display: inline-block;">
+                <a href="forca.html">
+                    <img src="img/forca.PNG" alt="Imagem" class="card-image">
+                    <p>Forca</p>
+                    <p>Acerte qual é a palavra proposta, para salvar o gatinho do "Enforca Gato".</p>
+                    <p></p>
+                    <p></p>
+                    <br>
+                    <button class="button">Jogar</button>
+                </a>
+            </div>
+            <div class="card" style="display: inline-block;">
+                <a href="troca_palavra.html">
+                    <img src="img/forcaa.PNG" alt="Imagem" class="card-image">
+                    <p>Troca Palavras</p>
+                    <p>Combine palavras de sua preferência para os filmes ficarem engraçados e divertidos.</p>
+                    <p></p>
+                    <p></p>
+                    <br>
+                    <button class="button">Jogar</button>
+                </a>
+            </div>
+        </div>
+
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="container">
+        <main> 
+            <ul>
+                <li class="footer-item"><a href="#">Quem Somos?</a></li>
+                <li class="footer-item"><a href="#">Dúvidas Frequentes</a></li>
+                <li class="footer-item"><a href="#">Contato</a></li>
+                <li class="footer-item"><a href="#">Termos de Uso</a></li>
+                <li class="footer-item"><a href="#">Privacidade</a></li>
+            </ul>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Jogos interativos por Emanuely Silva. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</footer>
+<!-- Fim do Rodapé -->
+  <!-- ACESSIBILIDADE -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+   <script>
+    new window.VLibras.Widget();
+   </script>
+<!-- FIM - ACESSIBILIDADE -->
+    
+        
+    </main>
+    <script src="JavaScript/programa.js"></script>
+</body>
+</html>
